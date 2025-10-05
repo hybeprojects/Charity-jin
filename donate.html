@@ -1,0 +1,459 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- todo: move this page out from behind existing login page -->
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Select a Fund</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="/Styles/pd/PortalMaster2.css" rel="stylesheet" type="text/css" />
+    <link href="/Styles/pd/ci-17.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/common.js" type="text/javascript"></script>
+    <script src="/js/pd/PortalCommon.js" type="text/javascript"></script>
+    <script src="/js/pd/all.js" type="text/javascript"></script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'G-C11CZVHE8R');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <div id="page" class="ci-new-styles">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=G-C11CZVHE8R"
+                    height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        
+
+
+
+
+        <header id="header" class="cf">
+            <div class="inner cf">
+                <div class="logo">
+                    <a href="https://childrenincorporated.org/">
+                        <img src="https://childrenincorporated.org/wp-content/themes/children_theme/images/logo.svg" alt="Children Incorporated">
+                    </a>
+                </div>
+
+                <section class="right-menu">
+                    <div class="ci-open-menu">
+                        <a href="javascript:openMenu();" id="open-menu">Menu</a>
+                    </div>
+
+                    
+<div id="userMenu">
+    <nav class="top-menu mobile-menu">
+        <ul class="menu menu-row">
+            <li class="buttonwrap">
+                <a href="/Donate/Fund" class="button" id="btnDonate" runat="server">DONATE</a>
+            </li>
+            <li class="buttonwrap blue">
+                <a href="/Donor/CISearchChild.aspx" class="button" id="btnSponsor" runat="server">SPONSOR</a>
+            </li>
+            <li class="accent-nav-link">
+                    <div id="login">
+                        <a href="/Donor/Login.aspx" ID="lnkLogin">Log in</a>
+                    </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- .top-menu -->
+
+    <nav class="bottom-menu mobile-menu">
+        <ul class="menu menu-row">
+        </ul>
+    </nav>
+</div>
+
+
+
+
+                    
+
+<div id="donorCart">
+    <div>
+            <a href="/Donor/CIDonorCart.aspx" class="ci-checkout-iframe"><img src="../images/pd/HeartCartEmpty.png" /></a>
+    </div>
+</div>
+
+
+                </section>
+            </div>
+        </header>
+
+
+        <div id="MainContent">
+            
+
+<span style="color:red"></span>
+
+<div class="ci-alert ci-alert-info show-alert">
+    <div class="ci-alert-info">
+        Looking to make a contribution toward your sponsored child(ren) instead?  Click <a href="/Donor/CIDonorProfile.aspx?active=1">here</a>.
+        <button class="ci-alert-close"><img src="/Styles/images/x.svg"></button>
+    </div>
+    <div class="ci-alert-subinfo">
+        (NOTE: You may be prompted to log in first).
+    </div>
+</div>
+
+    <div class="dms-donate-fund dms-donate-featured-fund">
+        <div class="inner">
+
+            
+<form action="/Donate/Fund" class="fund-select-form form-launch-modal" method="post">
+<div class="sectoken">
+    <input name="__RequestVerificationToken" type="hidden" value="K0SQ_Al0X5aAu0ei5mKwMq7_JR3BnAlwfE6jb1xucfVD5Sqq0WtjaHDi7tsF0-tstaqYLfI2NW6s1Q917OF8zo-iLTxXZDTWJ4mc43nflpM1" />
+</div>
+<input data-val="true" data-val-number="The field FundId must be a number." data-val-required="The FundId field is required." id="FundId" name="FundId" type="hidden" value="6" />    <h2 class="dms-donate-fund-title"><label for="">Donate Today!</label></h2>
+    <div class="dms-donate-fund-flex-wrap">
+        <div class="dms-donate-fund-form-wrap">
+            <div id="fund6" class="dms-donate-fund-form">
+                <input Value="" class="dms-donate-fund-input" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="Amount" min="1" name="Amount" type="number" value="0" />
+                <span class="field-validation-valid" data-valmsg-for="Amount" data-valmsg-replace="true"></span>
+                <input type="submit" class="button button-primary-solid ci-checkout-iframe" value="Donate Now" disabled="1">
+            </div>
+            <span class="dms-donate-fund-form-helper">Enter your donation amount above</span>
+        </div>
+        <div class="dms-donate-fund-desc-wrap">
+            <p class="dms-donate-fund-desc">
+                <label for="">Children around the world need our help more than ever. With the rising costs of even some of the most basic necessities, our support is critical to ensuring children living in poverty can go to school and get an education. Make a contribution now, or scroll down to donate to one of our Special Funds.</label>
+            </p>
+        </div>
+    </div>
+</form>
+        </div>
+    </div>
+    <div class="dms-donate-fund ">
+        <div class="inner">
+
+            
+<form action="/Donate/Fund" class="fund-select-form form-launch-modal" method="post">
+<div class="sectoken">
+    <input name="__RequestVerificationToken" type="hidden" value="YD3Nbd3EVc1lAJB9xOwOFX1RZ3frV7bvIu1nr-qgYrSqkxV-SICoFVxqMGF-hG-TCQLnrB40Pyc4zsOBNkpZC3iwkHtq02hqSLGj-fJayyw1" />
+</div>
+<input data-val="true" data-val-number="The field FundId must be a number." data-val-required="The FundId field is required." id="FundId" name="FundId" type="hidden" value="24" />    <h2 class="dms-donate-fund-title"><label for="">Shared Hope Fund (Help unsponsored children)</label></h2>
+    <div class="dms-donate-fund-flex-wrap">
+        <div class="dms-donate-fund-form-wrap">
+            <div id="fund24" class="dms-donate-fund-form">
+                <input Value="" class="dms-donate-fund-input" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="Amount" min="1" name="Amount" type="number" value="0" />
+                <span class="field-validation-valid" data-valmsg-for="Amount" data-valmsg-replace="true"></span>
+                <input type="submit" class="button button-primary-solid ci-checkout-iframe" value="Donate Now" disabled="1">
+            </div>
+            <span class="dms-donate-fund-form-helper">Enter your donation amount above</span>
+        </div>
+        <div class="dms-donate-fund-desc-wrap">
+            <p class="dms-donate-fund-desc">
+                <label for="">We add new children to our program every day, and finding enough sponsors for all of them is one of our greatest challenges. The global need is so profound that some children wait months for a sponsor. Gifts made to our Shared Hope Fund provide immediate assistance to children awaiting sponsorship.</label>
+            </p>
+                <a href="https://childrenincorporated.org/assistance-for-unsponsored-children/" target="_blank" class="button button-accent-solid">Read More</a>
+        </div>
+    </div>
+</form>
+        </div>
+    </div>
+    <div class="dms-donate-fund ">
+        <div class="inner">
+
+            
+<form action="/Donate/Fund" class="fund-select-form form-launch-modal" method="post">
+<div class="sectoken">
+    <input name="__RequestVerificationToken" type="hidden" value="sVIykdszYUH74an_iHDvDxt2jI9o48Zgsc9xb_TYg1WndkM5-3ZLurlqMZdW6yikuGi4_8xEXgDEzubew9k1N9AYPmZNrKrvm1QsT8nuAjU1" />
+</div>
+<input data-val="true" data-val-number="The field FundId must be a number." data-val-required="The FundId field is required." id="FundId" name="FundId" type="hidden" value="35" />    <h2 class="dms-donate-fund-title"><label for="">Hope In Action Fund</label></h2>
+    <div class="dms-donate-fund-flex-wrap">
+        <div class="dms-donate-fund-form-wrap">
+            <div id="fund35" class="dms-donate-fund-form">
+                <input Value="" class="dms-donate-fund-input" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="Amount" min="1" name="Amount" type="number" value="0" />
+                <span class="field-validation-valid" data-valmsg-for="Amount" data-valmsg-replace="true"></span>
+                <input type="submit" class="button button-primary-solid ci-checkout-iframe" value="Donate Now" disabled="1">
+            </div>
+            <span class="dms-donate-fund-form-helper">Enter your donation amount above</span>
+        </div>
+        <div class="dms-donate-fund-desc-wrap">
+            <p class="dms-donate-fund-desc">
+                <label for="">Contributions to our Hope In Action Fund go towards supporting children and families in emergency situations, like when natural disasters strike, in times of extreme hardship due to health challenges, and when families are unable to pay for food and basic necessities during a crisis.</label>
+            </p>
+                <a href="https://childrenincorporated.org/hope-in-action-fund/" target="_blank" class="button button-accent-solid">Read More</a>
+        </div>
+    </div>
+</form>
+        </div>
+    </div>
+    <div class="dms-donate-fund ">
+        <div class="inner">
+
+            
+<form action="/Donate/Fund" class="fund-select-form form-launch-modal" method="post">
+<div class="sectoken">
+    <input name="__RequestVerificationToken" type="hidden" value="-69gqIWVHxCVuCdQJ5wAA2G2-ROheBfUfPlA60PKY7T8ZIVga8pIMA8Tj6rKk_POJ0H78kcH_zT3HqRPIZjAZYIT8fIPpS3yJobWh1ES_MI1" />
+</div>
+<input data-val="true" data-val-number="The field FundId must be a number." data-val-required="The FundId field is required." id="FundId" name="FundId" type="hidden" value="2106" />    <h2 class="dms-donate-fund-title"><label for="">Feeding Programs Fund</label></h2>
+    <div class="dms-donate-fund-flex-wrap">
+        <div class="dms-donate-fund-form-wrap">
+            <div id="fund2106" class="dms-donate-fund-form">
+                <input Value="" class="dms-donate-fund-input" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="Amount" min="1" name="Amount" type="number" value="0" />
+                <span class="field-validation-valid" data-valmsg-for="Amount" data-valmsg-replace="true"></span>
+                <input type="submit" class="button button-primary-solid ci-checkout-iframe" value="Donate Now" disabled="1">
+            </div>
+            <span class="dms-donate-fund-form-helper">Enter your donation amount above</span>
+        </div>
+        <div class="dms-donate-fund-desc-wrap">
+            <p class="dms-donate-fund-desc">
+                <label for="">Our Feeding Programs Fund provides food for children who would otherwise go hungry so that they can be alert at school and ready to learn. This important fund supports our affiliated sites around the world so they can offer healthy meals to children daily and food items for them to take home on the weekends.</label>
+            </p>
+                <a href="https://childrenincorporated.org/feeding-programs/" target="_blank" class="button button-accent-solid">Read More</a>
+        </div>
+    </div>
+</form>
+        </div>
+    </div>
+    <div class="dms-donate-fund ">
+        <div class="inner">
+
+            
+<form action="/Donate/Fund" class="fund-select-form form-launch-modal" method="post">
+<div class="sectoken">
+    <input name="__RequestVerificationToken" type="hidden" value="XZGxH41yOGjm52tEo9_lxkZY71uE7PG8PjNU8y9C6LWKavZSFzxD6wF-3EaxhazvNG_224R3GzL5qn5MxYGLqqhvFdpTMHV-o1JipHNGSxE1" />
+</div>
+<input data-val="true" data-val-number="The field FundId must be a number." data-val-required="The FundId field is required." id="FundId" name="FundId" type="hidden" value="50" />    <h2 class="dms-donate-fund-title"><label for="">Back to School Fund</label></h2>
+    <div class="dms-donate-fund-flex-wrap">
+        <div class="dms-donate-fund-form-wrap">
+            <div id="fund50" class="dms-donate-fund-form">
+                <input Value="" class="dms-donate-fund-input" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="Amount" min="1" name="Amount" type="number" value="0" />
+                <span class="field-validation-valid" data-valmsg-for="Amount" data-valmsg-replace="true"></span>
+                <input type="submit" class="button button-primary-solid ci-checkout-iframe" value="Donate Now" disabled="1">
+            </div>
+            <span class="dms-donate-fund-form-helper">Enter your donation amount above</span>
+        </div>
+        <div class="dms-donate-fund-desc-wrap">
+            <p class="dms-donate-fund-desc">
+                <label for="">Back to school is one of the toughest times for children in need. Not having new outfits or school supplies to start the school year off right can diminish their confidence and make it difficult for them to focus. Contributions to our Back to School Fund make it possible to give children a little extra for a better beginning, so that they feel good and are ready to learn.</label>
+            </p>
+                <a href="https://childrenincorporated.org/back-to-school-fund/" target="_blank" class="button button-accent-solid">Read More</a>
+        </div>
+    </div>
+</form>
+        </div>
+    </div>
+    <div class="dms-donate-fund ">
+        <div class="inner">
+
+            
+<form action="/Donate/Fund" class="fund-select-form form-launch-modal" method="post">
+<div class="sectoken">
+    <input name="__RequestVerificationToken" type="hidden" value="lfMdNsNElHzwdYG52jxn6chSpEtkuMii99KFNv353jpXoAtCDz-u3fu22GjMRR6PWJljlloyvyXDqBLuk3DtSacNGA4IeAQL25RIHj0P1tY1" />
+</div>
+<input data-val="true" data-val-number="The field FundId must be a number." data-val-required="The FundId field is required." id="FundId" name="FundId" type="hidden" value="81" />    <h2 class="dms-donate-fund-title"><label for="">Clothing Fund</label></h2>
+    <div class="dms-donate-fund-flex-wrap">
+        <div class="dms-donate-fund-form-wrap">
+            <div id="fund81" class="dms-donate-fund-form">
+                <input Value="" class="dms-donate-fund-input" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="Amount" min="1" name="Amount" type="number" value="0" />
+                <span class="field-validation-valid" data-valmsg-for="Amount" data-valmsg-replace="true"></span>
+                <input type="submit" class="button button-primary-solid ci-checkout-iframe" value="Donate Now" disabled="1">
+            </div>
+            <span class="dms-donate-fund-form-helper">Enter your donation amount above</span>
+        </div>
+        <div class="dms-donate-fund-desc-wrap">
+            <p class="dms-donate-fund-desc">
+                <label for="">Donations to our Clothing Fund allow us to purchase new clothes, shoes, socks, boots, coats, hats, and gloves for our sponsored children during emergency situations and due to harsh or unexpected weather conditions.  Your support of this important fund ensures that children have proper clothes and shoes to wear so they can go attend school and stay healthy and comfortable throughout the year.</label>
+            </p>
+                <a href="https://childrenincorporated.org/clothing-and-shoes-fund/" target="_blank" class="button button-accent-solid">Read More</a>
+        </div>
+    </div>
+</form>
+        </div>
+    </div>
+    <div class="dms-donate-fund ">
+        <div class="inner">
+
+            
+<form action="/Donate/Fund" class="fund-select-form form-launch-modal" method="post">
+<div class="sectoken">
+    <input name="__RequestVerificationToken" type="hidden" value="VHfcDQqPK4aA4qEOuTt_194adeNuNFM2vIrpdgiN_vHAtcJShBrYmtIR4WcnWkLj1JqP-XO4QM9-ypHsihkCKJxdzrO-1q7-0dhTGFDYCOQ1" />
+</div>
+<input data-val="true" data-val-number="The field FundId must be a number." data-val-required="The FundId field is required." id="FundId" name="FundId" type="hidden" value="37" />    <h2 class="dms-donate-fund-title"><label for="">Higher Education Fund</label></h2>
+    <div class="dms-donate-fund-flex-wrap">
+        <div class="dms-donate-fund-form-wrap">
+            <div id="fund37" class="dms-donate-fund-form">
+                <input Value="" class="dms-donate-fund-input" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="Amount" min="1" name="Amount" type="number" value="0" />
+                <span class="field-validation-valid" data-valmsg-for="Amount" data-valmsg-replace="true"></span>
+                <input type="submit" class="button button-primary-solid ci-checkout-iframe" value="Donate Now" disabled="1">
+            </div>
+            <span class="dms-donate-fund-form-helper">Enter your donation amount above</span>
+        </div>
+        <div class="dms-donate-fund-desc-wrap">
+            <p class="dms-donate-fund-desc">
+                <label for="">Our Higher Education Fund helps young people pursue their dreams of completing certificate programs or obtaining a degree from a university or college. Many of our Higher Education Fund beneficiaries have returned to their communities in positions as teachers, nurses, social workers, accountants, architects, counselors, and speech therapists.</label>
+            </p>
+                <a href="https://childrenincorporated.org/higher-education/" target="_blank" class="button button-accent-solid">Read More</a>
+        </div>
+    </div>
+</form>
+        </div>
+    </div>
+    <div class="dms-donate-fund ">
+        <div class="inner">
+
+            
+<form action="/Donate/Fund" class="fund-select-form form-launch-modal" method="post">
+<div class="sectoken">
+    <input name="__RequestVerificationToken" type="hidden" value="KrSReopABHExXz4iy8_yd71xfFrPyASyFHQDcxg1z_cwZqxRg0BNP-re47XOtDS47EidYKkoi3ouviq1_fuA2DKHPMBB7BGcqcmUy0c6YfY1" />
+</div>
+<input data-val="true" data-val-number="The field FundId must be a number." data-val-required="The FundId field is required." id="FundId" name="FundId" type="hidden" value="99" />    <h2 class="dms-donate-fund-title"><label for="">Beds and Linens Fund</label></h2>
+    <div class="dms-donate-fund-flex-wrap">
+        <div class="dms-donate-fund-form-wrap">
+            <div id="fund99" class="dms-donate-fund-form">
+                <input Value="" class="dms-donate-fund-input" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="Amount" min="1" name="Amount" type="number" value="0" />
+                <span class="field-validation-valid" data-valmsg-for="Amount" data-valmsg-replace="true"></span>
+                <input type="submit" class="button button-primary-solid ci-checkout-iframe" value="Donate Now" disabled="1">
+            </div>
+            <span class="dms-donate-fund-form-helper">Enter your donation amount above</span>
+        </div>
+        <div class="dms-donate-fund-desc-wrap">
+            <p class="dms-donate-fund-desc">
+                <label for="">Children living in poverty often go without mattresses, bedding and linens. Many do not have beds of their own and sleep on cold, hard floors. Your donations will help us to provide these children with comfortable places to sleep. Better sleep often results in better school performance.</label>
+            </p>
+                <a href="https://childrenincorporated.org/beds-and-linens/" target="_blank" class="button button-accent-solid">Read More</a>
+        </div>
+    </div>
+</form>
+        </div>
+    </div>
+
+
+        </div>
+
+        <footer id="footer" class="ci-new-styles">
+            <section class="ci-prefooter">
+                <div class="inner">
+                    <div class="ci-prefooter__text">
+                        <h2>Children Incorporated is proud to be 100% trustworthy.</h2>
+                        <p>Children Incorporated is a qualified exempt organization under Section 501(c)(3) of the Internal Revenue Code. Tax ID # 54-0761510</p>
+                    </div>
+                    <div class="ci-prefooter__logos">
+                        <!-- (c) 2005, 2014. Authorize.Net is a registered trademark of CyberSource Corporation -->
+                        <div class="cred charity-navigator">
+                            <a href="https://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=3478">
+                                <img src="https://childrenincorporated.org/wp-content/themes/children_theme/images/charity-navigator-1.png" alt="Charity Navigator Four Star Charity">
+                            </a>
+                        </div>
+
+                        <div class="cred">
+                            <a href="http://www.guidestar.org/profile/54-0761510">
+                                <img src="https://childrenincorporated.org/wp-content/themes/children_theme/images/candid-seal-platinum-2022.png" alt="Guide Star Gold">
+                            </a>
+                        </div>
+                        <div class="cred bbb">
+                            <a href="http://charityreports.bbb.org//national/child-sponsorship/children-incorporated-in-richmond-va-472">
+                                <img src="https://childrenincorporated.org/wp-content/themes/children_theme/images/bbb-2023.png" alt="Better Business Bureau">
+                            </a>
+                        </div>
+                        <div class="cred">
+                            <a href="https://www.charitywatch.org/ratings-and-metrics/children-incorporated/169">
+                                <img src="https://childrenincorporated.org/wp-content/themes/children_theme/images/charitywatch.jpeg" alt="Charity Watch">
+                            </a>
+                        </div>
+                        <div class="AuthorizeNetSeal">
+                            <script language="javascript" type="text/javascript">
+                                var ANS_customer_id = "187de39d-6f3b-4dfd-b146-9c0d706a5094";
+                            </script>
+                            <script language="javascript" src="//verify.authorize.net/anetseal/seal.js" type="text/javascript">
+                            </script> <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">
+                                Credit Card
+                                Processing
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ci-subfooter">
+                <div class="inner">
+                    <div class="ci-subfooter__logo">
+                        <a href="https://childrenincorporated.org/">
+                            <img alt="Children Incorporated" src="https://childrenincorporated.org/wp-content/themes/children_theme/images/logo.gif">
+                        </a>
+                    </div><!-- .logo -->
+                    <div class="ci-subfooter__links">
+                        <nav class="ci-subfooter__nav">
+                            <ul class="menu menu-column" id="menu-footer-right-menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5478" id="menu-item-5478">
+                                    <a href="https://childrenincorporated.org//accountability/">Accountability</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442" id="menu-item-442">
+                                    <a href="https://childrenincorporated.org//meet-the-team/">Meet our staff</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445" id="menu-item-445">
+                                    <a href="https://childrenincorporated.org//contact-us/">Contact Us</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1596" id="menu-item-1596">
+                                    <a href="https://childrenincorporated.org//shop/">Shop</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-441" id="menu-item-441">
+                                    <a href="https://childrenincorporated.org//events/">Events</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-444" id="menu-item-444">
+                                    <a href="https://childrenincorporated.org//f-a-q/">FAQs</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1156 current_page_item menu-item-5479" id="menu-item-5479">
+                                    <a href="https://childrenincorporated.org">Home</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="ci-subfooter__social">
+                            <a class="fb" href="https://www.facebook.com/childreninc" target="_blank" title="Our Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="44" viewBox="0 0 43 44">
+                                    <path fill="#4F8BCA" fill-rule="evenodd" d="M42.8956835,22.4074074 C42.8956835,34.3331688 33.2925631,44 21.4471526,44 C9.60174222,44 0,34.3331688 0,22.4074074 C0,10.481646 9.60174222,0.814814815 21.4471526,0.814814815 C33.2925631,0.814814815 42.8956835,10.481646 42.8956835,22.4074074 Z M31.0588155,11.4074074 L12.6462205,11.4074074 C11.4782992,11.4074074 10.5215827,12.3352412 10.5215827,13.4698649 L10.5215827,31.3449499 C10.5215827,32.4795736 11.4782992,33.4074074 12.6462205,33.4074074 L21.852518,33.4074074 L21.852518,23.7821523 L19.0201338,23.7821523 L19.0201338,21.0326625 L21.852518,21.0326625 L21.852518,19.6572373 C21.852518,17.385269 23.760356,15.5323224 26.1017935,15.5323224 L28.9341777,15.5323224 L28.9341777,18.2818122 L26.1017935,18.2818122 C25.3227131,18.2818122 24.6849021,18.9008215 24.6849021,19.6572373 L24.6849021,21.0326625 L28.9341777,21.0326625 L28.2264313,23.7821523 L24.6849021,23.7821523 L24.6849021,33.4074074 L31.0588155,33.4074074 C32.2267368,33.4074074 33.1834532,32.4795736 33.1834532,31.3449499 L33.1834532,13.4698649 C33.1834532,12.3352412 32.2267368,11.4074074 31.0588155,11.4074074 Z" />
+                                </svg>
+                            </a>
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+    </div>
+
+    <div class="ci-checkout-modal ci-new-styles">
+        <div class="ci-checkout-modal-wrap" style="background: #fff url(../Styles/images/spinner.gif) center center no-repeat;">
+            <div class="ci-checkout-modal-header">
+                <button id="btnCloseModal" class="ci-checkout-modal-close" onclick="closeModal();">
+                    <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Single---Longform" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Confirm-Payment" transform="translate(-20.000000, -20.000000)" fill="#508FCC">
+                                <g id="Group-Copy" transform="translate(36.000000, 36.000000) rotate(-315.000000) translate(-36.000000, -36.000000) translate(16.000000, 16.000000)">
+                                    <rect id="Rectangle-7" x="0" y="18" width="40" height="4"></rect>
+                                    <rect id="Rectangle-7" transform="translate(20.000000, 20.000000) rotate(-270.000000) translate(-20.000000, -20.000000) " x="0" y="18" width="40" height="4"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+            <!--<div id="ci-checkout-frame"></div>-->
+            <iframe id="ci-checkout-iframe" class="" style="width: 100%; height: 100%;" name="ci-checkout-iframe"></iframe>
+        </div>
+    </div>
+
+    
+
+
+</body>
+</html>
